@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>World Capital's Quiz</title>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h1>Welcome to the World Capital's Quiz!</h1>
+	
+	<div id="box">
+	<form>
+		<h2>Question 1</h2>
+		<p>What is the capital of Australia?</p>
+
+		<input type="radio" name="australia" value="correct" checked>
+		<label>Sydney</label><br>
+
+		<input type="radio" name="australia" value="wrong">
+		<label>Cairo</label><br>
+
+		<input type="radio" name="australia" value="wrong">
+		<label>London</label><br>
+
+		<input type="radio" name="australia" value="wrong">
+		<label>Berlin</label><br>
+
+		<hr>
+		
+		<h2>Question 2</h2>
+		<p>What is the capital of England?</p>
+		
+		<input type="radio" name="england" value="wrong" checked>
+		<label>New York</label><br>
+
+		<input type="radio" name="england" value="wrong">
+		<label>Oxford</label><br>
+
+		<input type="radio" name="england" value="wrong">
+		<label>Yorkshire</label><br>
+
+		<input type="radio" name="england" value="correct">
+		<label>London</label><br>
+
+		<h2>Question 3</h2>
+		<h3>What is the capital of Germany?</h3>
+
+		<input type="radio" name="germany" value="wrong" checked>
+		<label>Rome</label><br>
+
+		<input type="radio" name="germany" value="wrong">
+		<label>Cairo</label><br>
+
+		<input type="radio" name="germany" value="wrong">
+		<label>London</label><br>
+
+		<input type="radio" name="germany" value="correct">
+		<label>Berlin</label><br>
+
+		<hr>
+
+		<h2>Question 4</h2>
+		<h3>What is the capital of Russia?</h3>
+
+		<input type="radio" name="russia" value="wrong" checked>
+		<label>Sydney</label><br>
+
+		<input type="radio" name="russia" value="correct">
+		<label>Moscow</label><br>
+
+		<input type="radio" name="russia" value="wrong">
+		<label>New Zealand</label><br>
+
+		<input type="radio" name="russia" value="wrong">
+		<label>Berlin</label><br>
+		
+		<hr>
+
+		<h2>Question 5</h2>
+		<h3>What is the capital of Mexico?</h3>
+
+		<input type="radio" name="mexico" value="wrong" checked>
+		<label>Cozumel</label><br>
+
+		<input type="radio" name="mexico" value="wrong">
+		<label>Los Alamos</label><br>
+
+		<input type="radio" name="mexico" value="correct">
+		<label>Mexico City</label><br>
+
+		<input type="radio" name="mexico" value="wrong">
+		<label>Texas</label><br>
+	
+		<hr>
+
+		<h2>Question 6</h2>
+		<h3>What is the capital of the US?</h3>
+		
+		<input type="radio" name="us" value="wrong" checked>
+		<label>New York</label><br>
+
+		<input type="radio" name="us" value="correct">
+		<label>Washington, D.C.</label><br>
+
+		<input type="radio" name="us" value="wrong">
+		<label>Rome</label><br>
+
+		<input type="radio" name="us" value="wrong">
+		<label>Tallahasee</label><br>
+
+		<hr>
+
+		<h2>Question 7</h2>
+		<h3>What is the capital of China?</h3>
+	
+		<input type="radio" name="china" value="wrong" checked>
+		<label>Beijing</label><br>
+
+		<input type="radio" name="china" value="correct">
+		<label>Hong Kong</label><br>
+
+		<input type="radio" name="china" value="wrong">
+		<label>Tokyo</label><br>
+
+		<input type="radio" name="china" value="wrong">
+		<label>Tibet</label><br>
+
+		<hr>
+
+		<h2>Question 8</h2>
+		<h3>What is the capital of Egypt?</h3>
+	
+		<input type="radio" name="egypt" value="correct" checked>
+		<label>Cairo</label><br>
+
+		<input type="radio" name="egypt" value="wrong">
+		<label>North Dakota</label><br>
+
+		<input type="radio" name="egypt" value="wrong">
+		<label>Madagascar</label><br>
+
+		<input type="radio" name="egypt" value="wrong">
+		<label>Sydney</label><br>
+
+		<hr>
+
+		<h2>Question 9</h2>
+		<h3>What is the capital of Japan?</h3>
+	
+		<input type="radio" name="japan" value="correct" checked>
+		<label>Tokyo</label><br>
+
+		<input type="radio" name="japan" value="wrong">
+		<label>Denver</label><br>
+
+		<input type="radio" name="japan" value="wrong">
+		<label>Austria</label><br>
+
+		<input type="radio" name="japan" value="wrong">
+		<label>Burma</label><br>
+		
+		<hr>
+
+		<h2>Question 10</h2>
+		<h3>What is the capital of Italy?</h3>
+	
+		<input type="radio" name="italy" value="correct" checked>
+		<label>Rome</label><br>
+
+		<input type="radio" name="italy" value="wrong">
+		<label>Rio di Janeiro</label><br>
+
+		<input type="radio" name="italy" value="wrong">
+		<label>Paris</label><br>
+
+		<input type="radio" name="italy" value="wrong">
+		<label>New Hampshire</label><br>
+			
+		<hr>
+		
+		<p>Submit answers to see score</p>
+		<input type="button" onClick="submitCapitals()" value="Submit Answers">
+	</form>
+	</div>
+	<div id="box">
+		
+	<h2>Quiz Results</h2>
+
+	<p>
+		1. <span class="australia-capital"></span><br>
+		2. <span class="england-capital"></span><br>
+		3. <span class="germany-capital"></span><br>
+		4. <span class="russia-capital"></span><br>
+		5. <span class="mexico-capital"></span><br>
+		6. <span class="us-capital"></span><br>
+		7. <span class="china-capital"></span><br>
+		8. <span class="egypt-capital"></span><br>
+		9. <span class="japan-capital"></span><br>
+		10. <span class="italy-capital"></span><br>
+	</p>
+
+	<div id="box">
+		<h2>Score Results:</h2>
+		<p>You scored: <span class="numRight"></span></p>
+		<p><span class="score"></span></p>
+	</div>
+<script src="js/main.js"></script>
+</body>
+</html>

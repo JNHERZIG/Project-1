@@ -1,0 +1,13 @@
+body {
+	padding: 125px;
+	background: #ccfaff;
+	color: black;
+	font-size: 18px;
+	font-family: calibri;
+}
+box {
+	background-color: #FFF;
+	border-radius: 22px;
+	margin: 25px 25px 50px;
+	padding: 50px;
+}
